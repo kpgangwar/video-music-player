@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Video Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎵 Video Music Player</h1>
+      <button id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</button>
+    </header>
+
+    <main>
+      <div class="video-section">
+        <video id="video" controls></video>
+
+        <div class="controls">
+          <button id="prev" class="control-btn">⏮️</button>
+          <button id="playPause" class="control-btn">▶️</button>
+          <button id="next" class="control-btn">⏭️</button>
+
+          <div class="progress-bar" id="progress">
+            <div class="progress" id="progressBar"></div>
+          </div>
+
+          <button id="mute" class="control-btn">🔊</button>
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+      </div>
+
+      <aside class="playlist" id="playlist">
+            <!-- Playlist generated dynamically -->
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
